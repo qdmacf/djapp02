@@ -1,18 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Github 查询用户信息</h1>
 
 {% if notfound %}
 <h2>{{notfound}}</h2>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{notfound}}</h1>
+  </div>
+</div>
 {% else %}
-<h1>查询结果{{username.name}}</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">查询结果如下：</h1>
+    <p class="lead">{{username.name}}</p>
+  </div>
+</div>
 <br>
 
 <div class="card" style="width: 18rem;">
-
+    <img class='card-img-top" src="{{username.avatar_url}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{username.name}}</h5>
                     <p class="card-text">location:{{username.location}}</p>
                     <p class="card-text">public_repos:{{username.public_repos}} </p>
                     <p class="card-text">created_at:{{username.created_at}} </p>
