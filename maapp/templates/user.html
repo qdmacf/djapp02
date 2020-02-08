@@ -2,31 +2,32 @@
 
 {% block content %}
 
-{% if notfound %}
-<h2>{{notfound}}</h2>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">{{notfound}}</h1>
-  </div>
-</div>
-{% else %}
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">查询结果如下：</h1>
-    <p class="lead">{{username.name}}</p>
-  </div>
-</div>
-<br>
+    {% if notfound %}
 
-<div class="card" style="width: 18rem;">
-    <img class='card-img-top" src="{{username.avatar_url}}" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">location:{{username.location}}</p>
-                    <p class="card-text">public_repos:{{username.public_repos}} </p>
-                    <p class="card-text">created_at:{{username.created_at}} </p>
-                    <p class="card-text">updated_at:{{username.updated_at}} </p>
-                </div>
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">{{notfound}}</h1>
+              </div>
             </div>
+
+    {% else %}
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-4">查询结果如下：</h1>
+                    <p class="lead">{{username.avatar_url}}</p>
+                  </div>
+                </div>
+                <br>
+
+                <div class="card" style="width: 18rem;">
+                    <img class='card-img-top" src="{{username.avatar_url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">location:{{username.location}}</p>
+                        <p class="card-text">public_repos:{{username.public_repos}} </p>
+                        <p class="card-text">created_at:{{username.created_at}} </p>
+                        <p class="card-text">updated_at:{{username.updated_at}} </p>
+                    </div>
+                </div>
     {% endif %}
 
 {% endblock %}
