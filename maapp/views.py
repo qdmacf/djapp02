@@ -15,7 +15,11 @@ def user(request):
 
         user = request.POST['user']
         user_request = requests.get("https://api.github.com/users/"+user)
+        print(user)
+        
         username = json.loads(user_request.content)
+        print(username)
+        username = "what are you searching"
 
         return render(request, 'user.html', {'username':username})
     else:
