@@ -14,6 +14,7 @@ def user(request):
         import json
 
         user = request.POST['user']
+        print(user)
         user_request = requests.get("https://api.github.com/users/"+user)
         print(user)
         
