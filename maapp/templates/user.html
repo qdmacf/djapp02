@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Github 查询用户信息</h1>
+{% if notfound %}
+<h2>{{notfound}}</h2>
+{% else %}
+<h1>{{username}}</h1>
+{% endif %}
+
+{% endblock %}
+
