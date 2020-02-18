@@ -1,18 +1,21 @@
+
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
-class Grades(models.Model):
-    gname = models.CharField(max_length=20)
-    gdate = models.DateTimeField()
-    ggirlnum = models.IntegerField()
-    gboynum = models.IntegerField()
-    isDelete = models.BooleanField(default=False)
+class BlogType(models.Model):
+    type_name = models.CharField(max_length=15)
 
+    def __str__(self):
+        return self.type_name
 
-class Students(models.Model):
-    sname = models.CharField(max_length=20)
-    sgender = models.BooleanField(default=True)
-    sage = models.IntegerField()
-    scontend = models.CharField(max_length=20)
-    isDelete = models.BooleanField(default=False)
-    sgrade = models.ForeignKey("Grades", on_delete=models.CASCADE, )
+class Blog(models.Model):
+    title = models.CharField(max_length=50)
+    blog_type = models.ForeignKey(BlogType, on_delete=models.DO_NOTHING)
+    content = models.TextField()
+    author = models.ForeignKey(User, on_delete=models.DO_NOTHING)
+    created_time = models.DateTimeField(auto_now_add=True)
+    last_updated_time = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return "<Blog: %s>" % self.title
+

@@ -1,0 +1,747 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 22:34:23 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 February 2020 14:22:52
+os: Linux-3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019
+nodename: iZm5e633czwudmg2dp7dt4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/virenv/djapp02
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/virenv/djapp02
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42099 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/virenv
+Set PythonHome to /home/virenv
+Python main interpreter initialized at 0x1bbd7f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1bbd7f0 pid: 18180 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18180)
+spawned uWSGI worker 1 (pid: 18182, cores: 2)
+spawned uWSGI worker 2 (pid: 18183, cores: 2)
+spawned uWSGI worker 3 (pid: 18184, cores: 2)
+spawned uWSGI worker 4 (pid: 18185, cores: 2)
+spawned uWSGI http 1 (pid: 18186)
+[pid: 18182|app: 0|req: 1/1] 123.196.12.31 () {38 vars in 730 bytes} [Sun Feb 16 14:34:42 2020] GET / => generated 18702 bytes in 1518 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 18182|app: 0|req: 2/2] 123.196.12.31 () {38 vars in 730 bytes} [Sun Feb 16 14:35:10 2020] GET / => generated 18702 bytes in 2856 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 3/3] 123.196.12.31 () {38 vars in 727 bytes} [Sun Feb 16 14:35:43 2020] GET / => generated 18702 bytes in 1617 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18182|app: 0|req: 4/4] 123.196.12.31 () {34 vars in 530 bytes} [Sun Feb 16 14:35:45 2020] GET /favicon.ico => generated 2300 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 5/5] 123.196.12.31 () {34 vars in 682 bytes} [Sun Feb 16 14:53:51 2020] GET / => generated 18702 bytes in 2245 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+Not Found: /maodiyi
+[pid: 18182|app: 0|req: 6/6] 123.196.12.31 () {36 vars in 785 bytes} [Sun Feb 16 14:54:17 2020] GET /maodiyi => generated 2288 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18182|app: 0|req: 7/7] 123.196.12.31 () {38 vars in 783 bytes} [Sun Feb 16 14:54:17 2020] GET /favicon.ico => generated 2300 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 8/8] 47.98.103.191 () {30 vars in 415 bytes} [Sun Feb 16 15:35:34 2020] GET / => generated 18702 bytes in 2789 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 9/9] 45.79.188.184 () {22 vars in 234 bytes} [Sun Feb 16 18:33:17 2020] GET / => generated 18702 bytes in 1762 msecs (HTTP/1.0 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /nice ports,/Trinity.txt.bak
+[pid: 18182|app: 0|req: 10/10] 45.79.188.184 () {22 vars in 296 bytes} [Sun Feb 16 18:33:21 2020] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 2362 bytes in 4 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 12/11] 45.79.188.184 () {22 vars in 238 bytes} [Sun Feb 16 18:33:30 2020] OPTIONS / => generated 18702 bytes in 2229 msecs (HTTP/1.0 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 12/12] 45.79.188.184 () {22 vars in 238 bytes} [Sun Feb 16 18:33:32 2020] OPTIONS / => generated 18702 bytes in 2702 msecs (RTSP/1.0 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /sip:nm
+[pid: 18182|app: 0|req: 13/13] 45.79.188.184 () {40 vars in 484 bytes} [Sun Feb 16 18:33:54 2020] OPTIONS sip:nm => generated 1644 bytes in 3 msecs (SIP/2.0 404) 3 headers in 101 bytes (1 switches on core 1)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18182|app: 0|req: 14/14] 80.82.70.187 () {28 vars in 426 bytes} [Sun Feb 16 19:21:17 2020] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1738 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 15/15] 123.234.22.2 () {36 vars in 573 bytes} [Mon Feb 17 01:30:23 2020] GET / => generated 18702 bytes in 1144 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 18182|app: 0|req: 16/16] 123.234.22.2 () {36 vars in 601 bytes} [Mon Feb 17 01:30:26 2020] GET /favicon.ico => generated 2303 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18182|app: 0|req: 17/17] 123.234.22.2 () {42 vars in 639 bytes} [Mon Feb 17 02:51:12 2020] GET / => generated 18702 bytes in 1176 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18182|app: 0|req: 18/18] 123.234.22.2 () {40 vars in 578 bytes} [Mon Feb 17 02:51:16 2020] GET /favicon.ico => generated 2303 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18182|app: 0|req: 19/19] 80.82.70.187 () {28 vars in 426 bytes} [Mon Feb 17 05:11:31 2020] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1738 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 20/20] 123.234.22.2 () {38 vars in 662 bytes} [Mon Feb 17 06:46:52 2020] GET / => generated 18702 bytes in 3463 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 21/21] 123.234.22.2 () {36 vars in 571 bytes} [Mon Feb 17 06:47:08 2020] GET / => generated 18702 bytes in 1233 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18182|app: 0|req: 22/22] 123.234.22.2 () {36 vars in 597 bytes} [Mon Feb 17 06:47:11 2020] GET /favicon.ico => generated 2300 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 23/23] 172.104.92.166 () {28 vars in 359 bytes} [Mon Feb 17 11:55:02 2020] GET / => generated 18702 bytes in 1002 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18182|app: 0|req: 24/24] 80.82.70.187 () {28 vars in 425 bytes} [Mon Feb 17 14:52:57 2020] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1738 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18182|app: 0|req: 25/25] 190.205.250.144 () {22 vars in 236 bytes} [Mon Feb 17 16:28:20 2020] GET / => generated 18702 bytes in 1008 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18182|app: 0|req: 26/26] 80.82.70.187 () {28 vars in 426 bytes} [Tue Feb 18 00:35:03 2020] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1738 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 27/27] 223.71.167.163 () {30 vars in 415 bytes} [Tue Feb 18 01:29:16 2020] GET / => generated 18702 bytes in 980 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+Not Found: /ip.ws.126.net:443
+[pid: 18182|app: 0|req: 28/28] 222.186.19.221 () {26 vars in 338 bytes} [Tue Feb 18 02:14:47 2020] CONNECT ip.ws.126.net:443 => generated 1666 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18182|app: 0|req: 29/29] 47.101.46.78 () {30 vars in 417 bytes} [Tue Feb 18 02:48:44 2020] GET / => generated 18702 bytes in 1111 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 18182|app: 0|req: 30/30] 121.159.162.50 () {22 vars in 235 bytes} [Tue Feb 18 03:12:12 2020] GET / => generated 18702 bytes in 1226 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 18182|app: 0|req: 31/31] 211.54.208.179 () {22 vars in 235 bytes} [Tue Feb 18 04:17:37 2020] GET / => generated 18702 bytes in 1173 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+gateway "uWSGI http 1" has been buried (pid: 18186)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 18182)...
+Gracefully killing worker 2 (pid: 18183)...
+Gracefully killing worker 3 (pid: 18184)...
+Gracefully killing worker 4 (pid: 18185)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/virenv/djapp02
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:42099)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from myuwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 06:18:17 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 February 2020 14:22:52
+os: Linux-3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019
+nodename: iZm5e633czwudmg2dp7dt4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/virenv/djapp02
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/virenv/djapp02
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:45362 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/virenv
+Set PythonHome to /home/virenv
+Python main interpreter initialized at 0x88a620
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x88a620 pid: 18180 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 18180)
+spawned uWSGI worker 1 (pid: 27401, cores: 2)
+spawned uWSGI worker 2 (pid: 27402, cores: 2)
+spawned uWSGI worker 3 (pid: 27403, cores: 2)
+spawned uWSGI worker 4 (pid: 27404, cores: 2)
+spawned uWSGI http 1 (pid: 27405)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 27405)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 20:23:09 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 February 2020 14:22:52
+os: Linux-3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019
+nodename: iZm5e633czwudmg2dp7dt4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/virenv/djapp02
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/virenv/djapp02
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46649 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/virenv
+Set PythonHome to /home/virenv
+Python main interpreter initialized at 0x1cdf8b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1cdf8b0 pid: 5733 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5733)
+spawned uWSGI worker 1 (pid: 5735, cores: 2)
+spawned uWSGI worker 2 (pid: 5736, cores: 2)
+spawned uWSGI worker 3 (pid: 5737, cores: 2)
+spawned uWSGI worker 4 (pid: 5738, cores: 2)
+spawned uWSGI http 1 (pid: 5739)
+[pid: 5738|app: 0|req: 1/1] 123.196.12.31 () {38 vars in 784 bytes} [Tue Feb 18 12:23:31 2020] GET /mdy/1 => generated 484 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 5738|app: 0|req: 2/2] 123.196.12.31 () {40 vars in 830 bytes} [Tue Feb 18 12:23:34 2020] GET /git/ => generated 18714 bytes in 1139 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 5738|app: 0|req: 3/3] 123.196.12.31 () {38 vars in 774 bytes} [Tue Feb 18 12:23:44 2020] GET / => generated 417 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 5738|app: 0|req: 4/4] 123.196.12.31 () {40 vars in 827 bytes} [Tue Feb 18 12:23:48 2020] GET /mdy/1 => generated 484 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 5738|app: 0|req: 5/5] 123.196.12.31 () {38 vars in 774 bytes} [Tue Feb 18 12:23:50 2020] GET / => generated 417 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 5738|app: 0|req: 6/6] 123.196.12.31 () {38 vars in 784 bytes} [Tue Feb 18 12:23:54 2020] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 5736|app: 0|req: 1/7] 123.196.12.31 () {38 vars in 786 bytes} [Tue Feb 18 12:23:54 2020] GET /admin/ => generated 5098 bytes in 105 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /static/admin/css/dashboard.css
+[pid: 5738|app: 0|req: 7/8] 123.196.12.31 () {38 vars in 803 bytes} [Tue Feb 18 12:23:54 2020] GET /static/admin/css/dashboard.css => generated 2356 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/responsive.css
+[pid: 5737|app: 0|req: 1/9] 123.196.12.31 () {38 vars in 805 bytes} [Tue Feb 18 12:23:54 2020] GET /static/admin/css/responsive.css => generated 2359 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 5735|app: 0|req: 1/10] 123.196.12.31 () {38 vars in 792 bytes} [Tue Feb 18 12:23:54 2020] GET /static/admin/css/base.css => generated 2341 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 5738|app: 0|req: 8/11] 123.196.12.31 () {40 vars in 869 bytes} [Tue Feb 18 12:24:01 2020] GET /admin/maodiyi/blog/add/ => generated 7332 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+Not Found: /static/admin/css/base.css
+[pid: 5736|app: 0|req: 2/12] 123.196.12.31 () {38 vars in 810 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/css/base.css => generated 2341 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/forms.css
+[pid: 5738|app: 0|req: 10/13] 123.196.12.31 () {38 vars in 812 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/css/forms.css => generated 2344 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/img/icon-addlink.svg
+[pid: 5737|app: 0|req: 2/14] 123.196.12.31 () {38 vars in 855 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/img/icon-addlink.svg => generated 2365 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/img/icon-deletelink.svg
+[pid: 5737|app: 0|req: 3/15] 123.196.12.31 () {38 vars in 861 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/img/icon-deletelink.svg => generated 2374 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/urlify.js
+[pid: 5735|app: 0|req: 2/16] 123.196.12.31 () {38 vars in 795 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/urlify.js => generated 2341 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 5738|app: 0|req: 10/17] 123.196.12.31 () {38 vars in 771 bytes} [Tue Feb 18 12:24:02 2020] GET /admin/jsi18n/ => generated 3185 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+Not Found: /static/admin/img/icon-changelink.svg
+[pid: 5738|app: 0|req: 11/18] 123.196.12.31 () {38 vars in 861 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/img/icon-changelink.svg => generated 2374 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/actions.js
+[pid: 5735|app: 0|req: 3/19] 123.196.12.31 () {38 vars in 797 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/actions.js => generated 2344 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/vendor/jquery/jquery.js
+[pid: 5737|app: 0|req: 4/20] 123.196.12.31 () {38 vars in 823 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/vendor/jquery/jquery.js => generated 2383 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/jquery.init.js
+[pid: 5738|app: 0|req: 12/21] 123.196.12.31 () {38 vars in 805 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/jquery.init.js => generated 2356 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/responsive.css
+[pid: 5736|app: 0|req: 4/22] 123.196.12.31 () {38 vars in 822 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/css/responsive.css => generated 2359 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/prepopulate.js
+[pid: 5736|app: 0|req: 4/23] 123.196.12.31 () {38 vars in 805 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/prepopulate.js => generated 2356 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/vendor/xregexp/xregexp.js
+[pid: 5735|app: 0|req: 4/24] 123.196.12.31 () {38 vars in 827 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 2389 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/core.js
+[pid: 5736|app: 0|req: 5/25] 123.196.12.31 () {38 vars in 791 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/core.js => generated 2335 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+[pid: 5737|app: 0|req: 5/26] 123.196.12.31 () {38 vars in 835 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 2401 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/change_form.js
+[pid: 5738|app: 0|req: 13/27] 123.196.12.31 () {38 vars in 805 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/change_form.js => generated 2356 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/prepopulate_init.js
+[pid: 5735|app: 0|req: 5/28] 123.196.12.31 () {38 vars in 815 bytes} [Tue Feb 18 12:24:02 2020] GET /static/admin/js/prepopulate_init.js => generated 2371 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 5738|app: 0|req: 14/29] 123.196.12.31 () {46 vars in 988 bytes} [Tue Feb 18 12:24:20 2020] POST /admin/maodiyi/blog/add/ => generated 0 bytes in 29 msecs (HTTP/1.1 302) 8 headers in 530 bytes (1 switches on core 1)
+[pid: 5738|app: 0|req: 15/30] 123.196.12.31 () {42 vars in 1135 bytes} [Tue Feb 18 12:24:20 2020] GET /admin/maodiyi/blog/ => generated 5887 bytes in 57 msecs (HTTP/1.1 200) 8 headers in 479 bytes (1 switches on core 0)
+Not Found: /static/admin/js/vendor/jquery/jquery.js
+[pid: 5738|app: 0|req: 16/31] 123.196.12.31 () {38 vars in 819 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/vendor/jquery/jquery.js => generated 2383 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/core.js
+[pid: 5738|app: 0|req: 17/32] 123.196.12.31 () {38 vars in 787 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/core.js => generated 2335 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/jquery.init.js
+[pid: 5736|app: 0|req: 6/33] 123.196.12.31 () {38 vars in 801 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/jquery.init.js => generated 2356 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/actions.js
+[pid: 5736|app: 0|req: 7/34] 123.196.12.31 () {38 vars in 793 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/actions.js => generated 2344 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/vendor/xregexp/xregexp.js
+[pid: 5736|app: 0|req: 8/35] 123.196.12.31 () {38 vars in 823 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 2389 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/prepopulate.js
+[pid: 5736|app: 0|req: 9/36] 123.196.12.31 () {38 vars in 801 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/prepopulate.js => generated 2356 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/changelists.css
+[pid: 5738|app: 0|req: 18/37] 123.196.12.31 () {38 vars in 820 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/css/changelists.css => generated 2362 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/base.css
+[pid: 5737|app: 0|req: 6/38] 123.196.12.31 () {38 vars in 806 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/css/base.css => generated 2341 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/urlify.js
+[pid: 5735|app: 0|req: 7/39] 123.196.12.31 () {38 vars in 791 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/urlify.js => generated 2341 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+[pid: 5735|app: 0|req: 8/40] 123.196.12.31 () {38 vars in 831 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 2401 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/responsive.css
+[pid: 5735|app: 0|req: 9/41] 123.196.12.31 () {38 vars in 818 bytes} [Tue Feb 18 12:24:21 2020] GET /static/admin/css/responsive.css => generated 2359 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 5735|app: 0|req: 9/42] 123.196.12.31 () {38 vars in 767 bytes} [Tue Feb 18 12:24:21 2020] GET /admin/jsi18n/ => generated 3185 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 5738|app: 0|req: 19/43] 123.196.12.31 () {38 vars in 812 bytes} [Tue Feb 18 12:28:13 2020] GET /admin/maodiyi/blog/ => generated 5690 bytes in 53 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+Not Found: /static/admin/js/vendor/jquery/jquery.js
+[pid: 5735|app: 0|req: 10/44] 123.196.12.31 () {38 vars in 819 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/vendor/jquery/jquery.js => generated 2383 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/js/jquery.init.js
+[pid: 5738|app: 0|req: 20/45] 123.196.12.31 () {38 vars in 801 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/jquery.init.js => generated 2356 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/core.js
+[pid: 5735|app: 0|req: 11/46] 123.196.12.31 () {38 vars in 787 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/core.js => generated 2335 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/urlify.js
+[pid: 5735|app: 0|req: 12/47] 123.196.12.31 () {38 vars in 791 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/urlify.js => generated 2341 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/actions.js
+[pid: 5735|app: 0|req: 13/48] 123.196.12.31 () {38 vars in 793 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/actions.js => generated 2344 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/vendor/xregexp/xregexp.js
+[pid: 5737|app: 0|req: 8/49] 123.196.12.31 () {38 vars in 823 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 2389 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 5737|app: 0|req: 8/50] 123.196.12.31 () {38 vars in 767 bytes} [Tue Feb 18 12:28:13 2020] GET /admin/jsi18n/ => generated 3185 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+Not Found: /static/admin/js/prepopulate.js
+[pid: 5738|app: 0|req: 21/51] 123.196.12.31 () {38 vars in 801 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/prepopulate.js => generated 2356 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/changelists.css
+[pid: 5736|app: 0|req: 10/52] 123.196.12.31 () {38 vars in 820 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/css/changelists.css => generated 2362 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+[pid: 5735|app: 0|req: 14/53] 123.196.12.31 () {38 vars in 831 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 2401 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 5735|app: 0|req: 15/54] 123.196.12.31 () {38 vars in 818 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/css/responsive.css => generated 2359 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 5737|app: 0|req: 9/55] 123.196.12.31 () {38 vars in 806 bytes} [Tue Feb 18 12:28:13 2020] GET /static/admin/css/base.css => generated 2341 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5739)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 20:52:11 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 February 2020 14:22:52
+os: Linux-3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019
+nodename: iZm5e633czwudmg2dp7dt4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/virenv/djapp02
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/virenv/djapp02
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41964 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/virenv
+Set PythonHome to /home/virenv
+Python main interpreter initialized at 0x2704840
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2704840 pid: 16254 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16254)
+spawned uWSGI worker 1 (pid: 16256, cores: 2)
+spawned uWSGI worker 2 (pid: 16257, cores: 2)
+spawned uWSGI worker 3 (pid: 16258, cores: 2)
+spawned uWSGI worker 4 (pid: 16259, cores: 2)
+spawned uWSGI http 1 (pid: 16260)
+[pid: 16259|app: 0|req: 1/1] 123.196.12.31 () {38 vars in 774 bytes} [Tue Feb 18 12:52:27 2020] GET / => generated 534 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /math
+[pid: 16259|app: 0|req: 2/2] 123.196.12.31 () {38 vars in 782 bytes} [Tue Feb 18 12:52:33 2020] GET /math => generated 2278 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 16259|app: 0|req: 3/3] 123.196.12.31 () {38 vars in 790 bytes} [Tue Feb 18 12:52:47 2020] GET /mdy/math => generated 320 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 16259|app: 0|req: 4/4] 123.196.12.31 () {38 vars in 790 bytes} [Tue Feb 18 13:08:29 2020] GET /mdy/math => generated 320 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 16259|app: 0|req: 5/5] 123.196.12.31 () {38 vars in 790 bytes} [Tue Feb 18 13:08:33 2020] GET /mdy/math => generated 320 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 16259|app: 0|req: 6/6] 123.196.12.31 () {38 vars in 790 bytes} [Tue Feb 18 13:08:36 2020] GET /mdy/math => generated 320 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+[pid: 16259|app: 0|req: 7/7] 123.196.12.31 () {38 vars in 827 bytes} [Tue Feb 18 13:09:04 2020] GET /mdy/math => generated 320 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 1)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 16256|app: 0|req: 1/8] 123.196.12.31 () {38 vars in 764 bytes} [Tue Feb 18 13:09:04 2020] GET /favicon.ico => generated 116129 bytes in 84 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 16260)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 21:10:26 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 16 February 2020 14:22:52
+os: Linux-3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019
+nodename: iZm5e633czwudmg2dp7dt4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/virenv/djapp02
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/virenv/djapp02
+your processes number limit is 7270
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41675 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/virenv
+Set PythonHome to /home/virenv
+Python main interpreter initialized at 0x2598840
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2598840 pid: 22836 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22836)
+spawned uWSGI worker 1 (pid: 22838, cores: 2)
+spawned uWSGI worker 2 (pid: 22839, cores: 2)
+spawned uWSGI worker 3 (pid: 22840, cores: 2)
+spawned uWSGI worker 4 (pid: 22841, cores: 2)
+spawned uWSGI http 1 (pid: 22842)
+Internal Server Error: /mdy/math
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 1/1] 123.196.12.31 () {40 vars in 858 bytes} [Tue Feb 18 13:10:39 2020] GET /mdy/math => generated 116282 bytes in 75 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 2/2] 123.196.12.31 () {38 vars in 764 bytes} [Tue Feb 18 13:10:40 2020] GET /favicon.ico => generated 116129 bytes in 79 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 1)
+Internal Server Error: /mdy
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 3/3] 123.196.12.31 () {38 vars in 817 bytes} [Tue Feb 18 13:11:35 2020] GET /mdy => generated 116062 bytes in 88 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 4/4] 123.196.12.31 () {38 vars in 759 bytes} [Tue Feb 18 13:11:35 2020] GET /favicon.ico => generated 116124 bytes in 61 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 5/5] 123.196.12.31 () {38 vars in 811 bytes} [Tue Feb 18 13:11:40 2020] GET / => generated 100684 bytes in 83 msecs (HTTP/1.1 500) 4 headers in 201 bytes (1 switches on core 0)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 6/6] 123.196.12.31 () {38 vars in 711 bytes} [Tue Feb 18 13:11:40 2020] GET /favicon.ico => generated 115903 bytes in 65 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 1)
+Internal Server Error: /git
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 7/7] 123.196.12.31 () {38 vars in 773 bytes} [Tue Feb 18 13:11:49 2020] GET /git => generated 115845 bytes in 64 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/virenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/virenv/lib/python3.6/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/virenv/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/virenv/lib/python3.6/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./djapp02/urls.py", line 19, in <module>
+    from maodiyi.views import blog_list
+  File "./maodiyi/views.py", line 32
+    y = random.randint(1,999)
+                            ^
+TabError: inconsistent use of tabs and spaces in indentation
+[pid: 22841|app: 0|req: 8/8] 123.196.12.31 () {38 vars in 715 bytes} [Tue Feb 18 13:11:50 2020] GET /favicon.ico => generated 115907 bytes in 65 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 1)

@@ -1,5 +1,6 @@
 """djapp02 URL Configuration
 
+
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
 Examples:
@@ -15,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from maodiyi.views import blog_list
+
 
 urlpatterns = [
+    path('',blog_list,name='home'),
     path('admin/', admin.site.urls),
-    path('',include("maapp.urls"))]
+    path('git/',include("maapp.urls")),
+    path('mdy/',include("maodiyi.urls")),
+]

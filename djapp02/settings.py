@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'maapp',
-    'maodiyi'
+    'maodiyi',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'djapp02.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.mysql',
-       'NAME': 'vsmain',
+       'NAME': 'maodiyiblog',
        'USER': 'machf',
        'PASSWORD': 'Super2020',
        'HOST': 'rm-m5evc6d1di064l8d4ko.mysql.rds.aliyuncs.com',
