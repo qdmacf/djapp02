@@ -24,17 +24,14 @@ def blogs_with_type(request, blog_type_pk):
 
 def mathtest(request):
     import random
-    
-    tests=[]
-    i=0
-    while i<10:
-    	x = random.randint(1,999)
-        y = random.randint(1,999)
-	tests.append(str(x)+" x "+str(y)+" =    ;")
-	i=i+1
 
-
-    
+    tests = []
+    i = 0
+    while i < 10:
+        x = random.randint(1, 999)
+        y = random.randint(1, 999)
+        tests.append(str(x) + " x " + str(y) + " =    ;")
+        i = i + 1
 
 
     context={}
