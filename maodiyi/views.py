@@ -22,9 +22,9 @@ def blogs_with_type(request, blog_type_pk):
     context['blog_type'] = blog_type
     return render_to_response('blogs_with_type.html', context)
 
+
 def mathtest(request):
     import random
-
     tests = []
     i = 0
     while i < 10:
@@ -33,6 +33,15 @@ def mathtest(request):
         tests.append(str(x) + " x " + str(y) + " =    ;")
         i = i + 1
 
+    # tests2 = []
+    i=0
+    while i < 10:
+        x = random.randint(1, 999)
+        y = random.randint(1, 999)
+        b=divmod(x,y)
+        if b[1]==0 and b[0]>1 :
+            tests.append(str(x) + " / " + str(y) + " =    ;")
+            i = i + 1
 
     context={}
     context['tests']= tests
