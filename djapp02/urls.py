@@ -19,11 +19,11 @@ from django.contrib.staticfiles.urls import static
 
 from django.contrib import admin
 from django.urls import path,include
-# from maodiyi.views import mdyhome
+from maodiyi.views import index
 from djapp02 import settings
 
 urlpatterns = [
-    # path('',mdyhome,name='home'),
+    path('',index,name="index"),
     path('git/', include("maapp.urls")),
     path('mdy/', include("maodiyi.urls")),
     path('adm/', admin.site.urls),
