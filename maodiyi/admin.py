@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import BlogType,Blog
+from .models import BlogType,Blog,Jobs
 
 @admin.register(BlogType)
 class BlogTypeAdmin(admin.ModelAdmin):
