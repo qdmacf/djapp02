@@ -3,17 +3,27 @@ from django.shortcuts import render
 # Create your views here
 
 from django.shortcuts import render_to_response, get_object_or_404
-from .models import Blog, BlogType,Jobs
+from .models import Blog, BlogType, Jobs
+
+def index(request):
+    # import requests
+    # import json
+    # api_request = requests.get("https://api.github.com/users?since=0")
+    # api = json.loads(api_request.content)
+    args="Home page"
+    return render(request,'index.html',{"args":args})
 
 def blog_list(request):
     context = {}
     context['blogs'] = Blog.objects.all()
     return render_to_response('blog_list.html', context)
 
+
 def blog_detail(request, blog_pk):
     context = {}
     context['blog'] = get_object_or_404(Blog, pk=blog_pk)
     return render_to_response('blog_detail.html', context)
+
 
 def blogs_with_type(request, blog_type_pk):
     context = {}
@@ -34,18 +44,18 @@ def mathtest(request):
         i = i + 1
 
     # tests2 = []
-    i=0
+    i = 0
     while i < 10:
         x = random.randint(1, 999)
         y = random.randint(1, 999)
-        b=divmod(x,y)
-        if b[1]==0 and b[0]>1 :
+        b = divmod(x, y)
+        if b[1] == 0 and b[0] > 1:
             tests.append(str(x) + " / " + str(y) + " =    ;")
             i = i + 1
 
-    context={}
-    context['tests']= tests
-    return render_to_response('math.html',context)
+    context = {}
+    context['tests'] = tests
+    return render_to_response('math.html', context)
 
 
 def job_query(request):

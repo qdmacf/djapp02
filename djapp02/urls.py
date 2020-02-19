@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from maodiyi.views import blog_list
+# from maodiyi.views import mdyhome
 
 
 urlpatterns = [
-    path('',blog_list,name='home'),
-    path('admin/', admin.site.urls),
-    path('git/',include("maapp.urls")),
-    path('mdy/',include("maodiyi.urls")),
+    # path('',mdyhome,name='home'),
+    path('git/', include("maapp.urls")),
+    path('mdy/', include("maodiyi.urls")),
+    path('adm/', admin.site.urls),
 ]
