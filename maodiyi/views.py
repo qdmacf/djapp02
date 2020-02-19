@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here
 
 from django.shortcuts import render_to_response, get_object_or_404
-from .models import Blog, BlogType
+from .models import Blog, BlogType,Jobs
 
 def blog_list(request):
     context = {}
