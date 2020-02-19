@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的网站</title>
+</head>
+<body>
+    <div>
+
+            <h3>处理任务列表</h3>
+
+    </div>
+    <hr>
+    {# xxxx #}
+    {% for j in jobs %}
+        <h3>{{ j.subject }}</h3>
+
+        <p>{{ j.email}}</p>
+        <p>{{ j.status}}</p>
+    {% empty %}
+
+    {% endfor %}
+
+</body>
+</html>

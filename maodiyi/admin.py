@@ -9,3 +9,7 @@ class BlogTypeAdmin(admin.ModelAdmin):
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
     list_display = ('title', 'blog_type', 'author', 'created_time', 'last_updated_time')
+
+@admin.register(Jobs)
+class JobsBlogAdmin(admin.ModelAdmin):
+    list_display = ('subject', 'fromemail', 'status', 'created_time', 'updated_time')

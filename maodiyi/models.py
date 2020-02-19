@@ -19,3 +19,12 @@ class Blog(models.Model):
     def __str__(self):
         return "<Blog: %s>" % self.title
 
+class Jobs(models.Model):
+    subject  = models.CharField(max_length=100)
+    fromemail= models.CharField(max_length=100)
+    status= models.CharField(max_length=10)
+    created_time = models.DateTimeField(auto_now_add=True)
+    updated_time = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return "<Jobs: %s>" % self.subject

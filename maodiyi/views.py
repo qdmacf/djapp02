@@ -46,3 +46,9 @@ def mathtest(request):
     context={}
     context['tests']= tests
     return render_to_response('math.html',context)
+
+
+def job_query(request):
+    context = {}
+    context['jobs'] = Jobs.objects.all()
+    return render_to_response('job_list.html', context)
