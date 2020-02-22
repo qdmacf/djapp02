@@ -14,10 +14,39 @@ def index(request):
     return render(request,'index.html',{"args":args})
 
 def guess(request):
-	if request.method =='POST':
-		try = request.POST['try']
-		result="you input: "+try
-                return render(request,'guess.html',{'result':result})
+    if request.method =='POST':
+
+        trynum = request.POST['trynum']
+        print(type(trynum))
+
+
+        target=request.session.get("target","null")
+        if target=="null":
+            import random
+            target = random.randint(0,100)
+            request.session["target"]=target
+
+
+
+
+        if trynum.isnumeric():
+            num=int(trynum)
+            if (num == target):
+                result = "Yeah，猜中了！ 你的数是："+trynum+" "
+                result+="可以继续猜下一个数字了："
+                request.session.clear()
+            elif (num <= target):
+                result = "你猜的数 小 啦 你的数是："+trynum
+            else:
+                result = "你猜的数 大 啦 你的数是："+trynum
+        else:
+            result = "请输入有效数字"
+        # result = result+"  target="+str(target)
+
+        return render(request,'guess.html',{'result':result})
+    else:
+        notfound = "请在框里输入一个数字"
+        return render(request, 'guess.html', {'notfound': notfound})
 
 
 def blog_list(request):
