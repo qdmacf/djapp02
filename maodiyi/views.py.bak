@@ -13,13 +13,6 @@ def index(request):
     args="Home page"
     return render(request,'index.html',{"args":args})
 
-def guess(request):
-	if request.method =='POST':
-		try = request.POST['try']
-		result="you input: "+try
-                return render(request,'guess.html',{'result':result})
-
-
 def blog_list(request):
     context = {}
     context['blogs'] = Blog.objects.all()
