@@ -64,7 +64,7 @@ def blog_detail(request, blog_pk):
 def getrsasign(data):
     with open('./maodiyi/bgedo_pri.pem', 'r') as f:
         privkey = rsa.PrivateKey.load_pkcs1(f.read().encode())
-        print(privkey)
+        
 
     ensign = rsa.sign(data.encode(), privkey, 'SHA-256')
     encodestr = base64.b64encode(ensign).decode()
