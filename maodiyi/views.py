@@ -64,7 +64,7 @@ def blog_detail(request, blog_pk):
 def getrsasign(data):
     with open('./maodiyi/bgedo_pri.pem', 'r') as f:
         privkey = rsa.PrivateKey.load_pkcs1(f.read().encode())
-        
+
 
     ensign = rsa.sign(data.encode(), privkey, 'SHA-256')
     encodestr = base64.b64encode(ensign).decode()
@@ -74,7 +74,7 @@ def getrsasign(data):
 def bgsig(request):
     if request.method == 'POST':
         data = request.POST['data']
-        result = getrsasign(data)
+        result = 'aaaaaaaaaa'
         return render(request,'bgsig.html',{'result':result})
     else:
         error = "有问题，请检查"
