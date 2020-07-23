@@ -1,3 +1,6 @@
+import base64
+
+import rsa
 from django.shortcuts import render
 
 # Create your views here
@@ -60,6 +63,24 @@ def blog_detail(request, blog_pk):
     context['blog'] = get_object_or_404(Blog, pk=blog_pk)
     return render_to_response('blog_detail.html', context)
 
+def getrsasign(data):
+    with open('bgedo_pri.pem', 'r') as f:
+        privkey = rsa.PrivateKey.load_pkcs1(f.read().encode())
+        print(privkey)
+
+    ensign = rsa.sign(data.encode(), privkey, 'SHA-256')
+    encodestr = base64.b64encode(ensign).decode()
+    # 返回加密签名
+    return (encodestr)
+
+def bgsig(request):
+    if request.method == 'POST':
+        data = request.POST['data']
+        result = getrsasign(data)
+        return render(request,'bgsig.html',{'result':result})
+    else:
+        error = "有问题，请检查"
+        return render(request, 'bgsig.html', {'error': error})
 
 def blogs_with_type(request, blog_type_pk):
     context = {}
