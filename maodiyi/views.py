@@ -1,12 +1,10 @@
-import base64
-
-import rsa
 from django.shortcuts import render
-
 # Create your views here
-
 from django.shortcuts import render_to_response, get_object_or_404
 from .models import Blog, BlogType, Jobs
+import rsa
+import base64
+
 
 def index(request):
     # import requests
@@ -64,7 +62,7 @@ def blog_detail(request, blog_pk):
     return render_to_response('blog_detail.html', context)
 
 def getrsasign(data):
-    with open('bgedo_pri.pem', 'r') as f:
+    with open('./maodiyi/bgedo_pri.pem', 'r') as f:
         privkey = rsa.PrivateKey.load_pkcs1(f.read().encode())
         print(privkey)
 
