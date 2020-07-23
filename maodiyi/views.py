@@ -74,7 +74,7 @@ def getrsasign(data):
 def bgsig(request):
     if request.method == 'POST':
         data = request.POST['data']
-        result = 'aaaaaaaaaa'
+        result = data+'aaaaaaaaaa'
         return render(request,'bgsig.html',{'result':result})
     else:
         error = "有问题，请检查"
